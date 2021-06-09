@@ -1,0 +1,11 @@
+$paddings: (container: 1050px)
+
+$colors: (primary: #1899f5, danger: #e22323, disabled: #ddd)
+
+\:root
+
+  @each $color, $value in $colors
+    --#{$color}: #{$value}
+
+  @each $padding, $size in $paddings
+    --#{$padding}-padding: #{$size}

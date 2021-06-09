@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr" dir="ltr" class="h-100">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/app.sass" />
+  </head>
+  <body class="h-100 w-100">
+    <div class="container">
+      <h1>Coucou !</h1>
+      <p class="mb-2">
+        Bonjour ! Je suis <strong>un paragraphe</strong> qui <em>aime jouer</em> dans l'eau. <u>Je fais aussi</u> des
+        blagues ! Je peux aussi être <a href="#">un lien</a>.
+      </p>
+      <section class="col-6">
+        <div class="card">
+          <header class="card-header">
+            <h2>Card title</h2>
+          </header>
+          <div class="card-body">
+            <p class="card-content">Je vous aime.</p>
+            <a href="#" class="button button-primary">Read more&hellip;</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <form action="">
+          <div class="form-group">
+            <label for="input_form">Input </label>
+            <input type="text" id="input_form" class="form-control" value="dflkghoudsftgeirdqhiukdfgbviuydfgi" />
+          </div>
+          <div class="form-group">
+            <label for="input_form_disabled">Input disabled</label>
+            <input type="text" id="input_form_disabled" class="form-control" disabled />
+          </div>
+          <div class="form-group">
+            <label for="textarea_form">Textarea</label>
+            <textarea id="textarea_form" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="select_form">Select</label>
+            <select id="select_form" class="form-select">
+              <option value="">Option</option>
+              <option value="" disabled>Option disabled</option>
+              <optgroup label="Label">
+                <option value="">Option 2</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="select_form_disabled">Select disabled</label>
+            <select id="select_form_disabled" class="form-select" disabled>
+              <option value="">Option</option>
+              <optgroup label="Label">
+                <option value="">Option 2</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-actions">
+            <button class="button button-primary">Submit form</button>
+            <input type="reset" class="button button-primary" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

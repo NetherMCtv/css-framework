@@ -1,0 +1,32 @@
+@import "buttons"
+
+\:disabled, .disabled
+  cursor: not-allowed
+  @include color(disabled, true)
+
+input, button, textarea, select, option, optgroup
+  @include default-fonts
+
+button, select, input[type="file"], input[type="checkbox"], input[type="radio"], input[type="color"], input[type="submit"],
+input[type="reset"], input[type="range"]
+  cursor: pointer
+
+.form-group
+  margin-bottom: 1rem
+
+.form-control, .form-select
+  display: block
+  border-radius: 0.25rem
+  border: 1px solid #000
+  padding: 6px 8px
+  width: 100%
+
+.form-select, select
+  appearance: none
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7' /></svg>")
+  background-repeat: no-repeat
+  background-position: 99.6% center
+  background-size: 25px
+
+textarea
+  resize: vertical

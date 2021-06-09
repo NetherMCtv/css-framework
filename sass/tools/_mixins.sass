@@ -1,0 +1,9 @@
+@mixin default-fonts
+  font-family: -apple-system, system-ui, Arial, sans-serif
+  font-size: 1rem
+
+@mixin color($color, $isBackground: false)
+  @if $isBackground == true
+    background-color: var(--#{$color})
+  @else
+    color: var(--#{$color})

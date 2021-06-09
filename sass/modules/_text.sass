@@ -1,0 +1,10 @@
+$headings: h1, h2, h3, h4, h5, h6
+$headingClasses: (".h1", ".h2", ".h3", ".h4", ".h5", ".h6")
+$headingsSizes: (h1: 2rem, h2: 1.7rem, h3: 1.4rem, h4: 1.2rem, h5: 0.9rem, h6: 0.7rem)
+
+@each $heading, $headingSize in $headingsSizes
+  #{$heading}, .#{$heading}
+    font-size: $headingSize
+
+#{$headings}, #{$headingClasses}
+  margin-bottom: 0.5rem
